@@ -17,7 +17,7 @@ function player() {
 player.prototype.rollOne = function () {
   if (this.roll === 1) {
     this.turnScore = 0;
-    alert("Oink!your score is 0!");
+    alert("O u c h!! no score, you rolled a 1!");
   } else {
     this.turnScore += this.roll;
   }
