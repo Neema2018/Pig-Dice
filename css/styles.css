@@ -1,17 +1,19 @@
 .jumbotron{
     background-color: rgba(128, 128, 128, 0.603);
     text-align: center;
-    color: black;
-    font-style: italic;
-    font-family: 'Nosifer', cursive;
+    color: blueviolet;
+    font-style: italic; 
+    font-family: 'Nosifer', cursive;   
 }
 .container{
     background-image: url(../images/images.jpeg);
+    text-align: center;
+    width: 88%
 }
 body{
-    background-image: url(../images/roll.jpeg);
-    color: black;
-    font-family: 'Nosifer', cursive;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    color: rgb(10, 10, 117);
+    font-family: 'Gloria Hallelujah', cursive;
 }
 .well{
     background-color: rgba(128, 128, 128, 0.603);
@@ -19,8 +21,17 @@ body{
 .panel-group{
     font-style: oblique;
     font-weight: bolder;
-    font-family: 'Nosifer', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 .btn{
-    position: center;
+    font-size: 22.5px;
+    background-color: #7e0f8d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #eee;
+    color: white; 
+    font-family: 'Gloria Hallelujah', cursive;
 }
+.dice {
+    display: inline-block;
+}
+
