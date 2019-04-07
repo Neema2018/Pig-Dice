@@ -31,4 +31,10 @@ body{
     color: white; 
     font-family: 'Gloria Hallelujah', cursive;
 }
+h2{
+    font-family: 'Playfair Display', serif;
+}
+.row{
+    font-family: 'Roboto Slab', serif;
+}
 
