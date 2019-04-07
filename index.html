@@ -7,25 +7,73 @@
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
             <link rel="stylesheet" href="css/styles.css" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-            <script src="js/jquery.js"></script>
-            <script src="js/scripts.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+            <script src="js/jquery-3.3.1.min.js"></script>
         <title>PIG DICE</title> 
             <div class="container">
             <div class="jumbotron">
                 <h1>PIG DICE GAME</h1>
               </div> 
               <div class="well">
-                    <div class="panel-group">
-              <p><strong> LET'S GET STARTED!!</strong></p>
-              <div class="form-group">
-                <label for="First Player">First Player</label>
-                <input id="First Player" type="text" placeholder="name">
-                <label for="Second Player"> Second Player</label>
-                <input id="Second Player" type="text" placeholder="name">
-                <label for="Winning Score">Winning Score</label>
-                <input id="Winning Score" type="number" placeholder="score">
-                </div>
-                        <button type="submit" class="submit">PLAY!!</button>
+                    <p><strong> LET'S GET STARTED!!</strong></p>
+                  
+                    <section id="playingForm">
+                            <h2 class="newGame">New Game</h2>
+                            <form id="playerNames" class="form-group">
+                                <h2>Insert your names to play:</h2>
+                                <div class="row">
+                                    <section class="col-md-6">
+                                        <label for="player1">Player1</label>
+                                        <input type="text" required id="player1Name" class="form-control">
+                                    </section>
+                                    <section class="col-md-6">
+                                        <label for="player1">Player2</label>
+                                        <input type="text" required id="player2Name" class="form-control">
+                                    </section>
+                                </div>
+                                <button type="submit" class="submit" id="playButton">Play</button>
+                            </form>
+                    </section>
+                    <div class="row">
+
+                            <div class="col-md-6">
+                            <div class="column">
+                                <img src="images/player1.jpeg" width="300px" height="300px">
+                              <h1 class="p1">Player one</h1><br><br>
+                      
+                      
+                      
+                                 <p class="D">Dice Roll: <span id="diceroll1"></span></p>
+                                 <p class="U">Turn Score: <span id="turnscore1"></span></p>
+                                 <p class="O">Total Score: <span id="totalscore1"></span></p>
+                                 <button  id="play1" class="btn">ROLL</button>
+                                 <button  id="play1-pause" class="btn">PAUSE</button>
+                      
+                            </div>
+                            </div>
+                      
+                      
+                            <div class="col-md-6">
+                            <div class="column2">
+                                <img src="images/player2.jpeg" width="300px" height="300px">
+                              <h1 class="p2">Player two</h1><br><br>
+                      
+                      
+                                 <p class="D">Dice Roll: <span id="diceroll2"></span></p>
+                                 <p class="U">Turn Score: <span id="turnscore2"></span></p>
+                                 <p class="O">Total Score: <span id="totalscore2"></span></p>
+                                 <button id="play2" class="btn">ROLL</button>
+                                 <button id="play2-pause" class="btn">PAUSE</button>
+                      
+                      
+                            </div>
+                            </div>
+                      
+                          </div>
+                      
+                      
+                      
+                        </div>
+                        <script src="js/scripts.js"></script>
                 </body>
-                
                 </html>
