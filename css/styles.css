@@ -12,7 +12,7 @@
 }
 body{
     background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-    color: rgb(10, 10, 117);
+    color: rgb(214, 19, 182);
     font-family: 'Gloria Hallelujah', cursive;
 }
 .well{
@@ -37,4 +37,5 @@ h2{
 .row{
     font-family: 'Roboto Slab', serif;
 }
+
 
