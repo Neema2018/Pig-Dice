@@ -17,7 +17,7 @@ function player() {
 player.prototype.rollOne = function () {
   if (this.roll === 1) {
     this.turnScore = 0;
-    alert("O u c h!! no score, you rolled a 1!");
+    alert("Oink Oink!! no score, you rolled a 1!");
   } else {
     this.turnScore += this.roll;
   }
@@ -26,9 +26,9 @@ player.prototype.rollOne = function () {
 player.prototype.pause = function () {
   this.totalScore += this.turnScore;
   this.turnScore = 0;
-  alert("Pass To The Next Player ");
+  alert("Next Player Please!");
   if (this.totalScore >= 100) {
-    alert("Woo-Hoo! You Win");
+    alert("Hurrayy! You Win");
   }
 }
 
