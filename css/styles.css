@@ -33,6 +33,7 @@ body{
         background-color: rgb(0, 153, 255);
         animation-name: example;
         animation-duration: 0.5s;
+        animation-direction: reverse;
         animation-iteration-count: infinite;
       }
   }
