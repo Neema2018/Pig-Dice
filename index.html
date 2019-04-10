@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-     <meta charset="utf-8">
-     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-     <link href="css/styles.css" rel="stylesheet" type="text/css">
-     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-     <script src="js/jquery-3.3.1.min.js"></script>
-    
-    
-     <title>Pig Dice</title>
-    </head>
-    
-    <body>
-    
-     <div class="container">
-           <div class="jumbotron">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+            <link rel="stylesheet" href="css/styles.css" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+            <script src="js/jquery-3.3.1.min.js"></script>
+        <title>PIG DICE</title> 
+            <div class="container">
+            <div class="jumbotron">
                 <h1>PIG DICE GAME</h1>
-         <h2>LET'S GET STARTED!!<h2>
-            </div>
-             <button id="start" type="button">CLICK TO PLAY!!</button>
-         <div class="row">
-           <div class="col-xs-6">
-             <div class="panel panel-default">
-               <div class="panel-body">
-                 <div class="form-group">
-                   <h2>Player 1</h2>
-                   <img src="images/player1.jpeg.jpg" width="150px" height="150px">
-                   <button id="player1-roll" class="btn btn-success">Roll</button>
-                   <button id="player1-hold" class="btn btn-success">Hold</button>
-                   <h2>Dice Roll: <span id="die-roll-1"></span></h2>
-                   <p>Round Total: <span id="round-total-1"></span></p>
-                   <p>Total Score: <span id="total-score-1"></span></p>
-    
-                 </div>
-               </div>
-             </div>
-           </div>
-    
-    
-           <div class="col-xs-6">
-             <div class="panel panel-default">
-               <div class="panel-body">
-    
-                 <div class="form-group">
-                   <h2>Player 2</h2>
+              </div> 
+              <div class="well">
+                    <h2> LET'S GET STARTED!!</h2>
                   
-                   <img src="images/player2.jpeg.jpg" width="150px" height="150px"> 
-                   <button id="player2-roll" class="btn btn-success">Roll</button>
-                   <button id="player2-hold" class="btn btn-success">Hold</button>
-                   <h2>Dice Roll: <span id="die-roll-2"></span></h2>
-                   <p>Round Total: <span id="round-total-2"></span></p>
-                   <p>Total Score: <span id="total-score-2"></span></p>
-    
-                 </div>
-               </div>
-    
-    
-             </div>
-           </div>
-         </div>
-    
-    
-    </div>
-    <script src="js/scripts.js"></script>
-  
-    </body>
-    </html>
+                    <section id="playingForm">
+                            <h2 class="newGame">New Game</h2>
+                            <form id="playerNames" class="form-group">
+                                <h2>Insert your names to play:</h2>
+                                <div class="row">
+                                    <section class="col-md-6">
+                                        <label for="player1">Player1</label>
+                                        <input type="text" required id="player1Name" class="form-control">
+                                    </section>
+                                    <section class="col-md-6">
+                                        <label for="player1">Player2</label>
+                                        <input type="text" required id="player2Name" class="form-control">
+                                    </section>
+                                </div>
+                                <button type="submit" class="submit" id="playButton">Play</button>
+                            </form>
+                    </section>
+                    <div class="row">
+
+                            <div class="col-md-6">
+                            <div class="column">
+                                <img src="images/player1.jpeg.jpg" width="300px" height="300px">
+                              <h1 class="p1">Player one</h1><br><br>
+                      
+                      
+                      
+                                 <p class="roll">Dice Roll: <span id="diceroll1"></span></p>
+                                 <p class="score">Turn Score: <span id="turnscore1"></span></p>
+                                 <p class="total">Total Score: <span id="totalscore1"></span></p>
+                                 <button  id="play1" class="btn">ROLL</button>
+                                 <button  id="play1-pause" class="btn">PAUSE</button>
+                      
+                            </div>
+                            </div>
+                      
+                      
+                            <div class="col-md-6">
+                            <div class="column2">
+                                <img src="images/player2.jpeg.jpg" width="300px" height="300px">
+                              <h1 class="p2">Player two</h1><br><br>
+                      
+                      
+                                 <p class="roll">Dice Roll: <span id="diceroll2"></span></p>
+                                 <p class="score">Turn Score: <span id="turnscore2"></span></p>
+                                 <p class="total">Total Score: <span id="totalscore2"></span></p>
+                                 <button id="play2" class="btn">ROLL</button>
+                                 <button id="play2-pause" class="btn">PAUSE</button>
+                      
+                      
+                            </div>
+                            </div>
+                      
+                          </div>
+                      
+                      
+                      
+                        </div>
+                        <script src="js/scripts.js"></script>
+                </body>
+                </html>
