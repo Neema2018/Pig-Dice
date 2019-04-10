@@ -1,8 +1,11 @@
-var player1 = "";
-var player2 = "";
+// business logic section
+var player1,player2;
+
+// constructor for players
 var throwdice = function() {
  return Math.floor(6 * Math.random()) + 1;
 }
+
 
 $(document).ready(function() {
 
@@ -39,7 +42,7 @@ $(document).ready(function() {
  }
 
 
-
+// user logic section
 
  $("button#player1-roll").click(function(event) {
    player1.roll = throwdice();
